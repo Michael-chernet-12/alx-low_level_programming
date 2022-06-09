@@ -21,5 +21,5 @@ int main(void)
 		n++;
 	}
 	printf("Buzz\n");
-	return (0)
+	return (0);
 }
