@@ -1,29 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - Entry Point
- *
- * @argc: arg counter
- * @argv: arguments array
- *
- * Return: Always 0 (Success)
+ *  main -  print name
+ *  @argc: int.
+ *  @argv: char.
+ *  Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
-	int a, b;
-	(void)argc;
-	(void)argv;
 
-	if (argc < 3)
+	int i;
+
+	for (i = 0 ; i < argc ; i++)
 	{
-		printf("Error\n");
-		return (1);
+		printf("%s\n", argv[i]);
 	}
-
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-
-	printf("%d\n", a * b);
-
 	return (0);
 }
