@@ -1,18 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * @argv: vector of strings with arguments
- *
- * Return: Always 0 (Success)
- *
+ * main -  print name
+ * @argc: int.
+ * @argv: char.
+ * Return: Always 0.
  */
-int main(int argc, char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
-	(void)argc;
-	(void)argv;
-
 	printf("%d\n", argc - 1);
-
 	return (0);
 }
